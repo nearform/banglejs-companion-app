@@ -1,0 +1,29 @@
+dependencies: \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/node_modules/react-native/Libraries/TypeSafety/RCTConvertHelpers.mm \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Target\ Support\ Files/RCTTypeSafety/RCTTypeSafety-prefix.pch \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/node_modules/react-native/Libraries/TypeSafety/RCTConvertHelpers.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/FBLazyVector/FBLazyVector/FBLazyVector.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/FBLazyVector/FBLazyVector/FBLazyIterator.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Folly/folly/Optional.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Folly/folly/Portability.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Folly/folly/portability/Config.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Folly/folly/CPortability.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Folly/folly/Traits.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Folly/folly/Utility.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Folly/folly/lang/Exception.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Folly/folly/CppAttributes.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTConvert.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTAnimationType.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTBorderStyle.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTDefines.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTInspectorDevServerHelper.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTPackagerConnection.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTLog.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTAssert.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTUtils.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTPointerEvents.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTTextDecorationLineType.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/Yoga/yoga/Yoga.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/Yoga/yoga/YGEnums.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/Yoga/yoga/YGMacros.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/Yoga/yoga/YGValue.h

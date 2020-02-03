@@ -1,0 +1,35 @@
+dependencies: \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/node_modules/react-native/React/Base/Surface/SurfaceHostingView/RCTSurfaceHostingProxyRootView.mm \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Target\ Support\ Files/React-Core/React-Core-prefix.pch \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/node_modules/react-native/React/Base/Surface/SurfaceHostingView/RCTSurfaceHostingProxyRootView.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTRootView.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTBridge.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTBridgeDelegate.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTJavaScriptLoader.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTDefines.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTInspectorDevServerHelper.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTPackagerConnection.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTBridgeModule.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTFrameUpdate.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTInvalidating.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/node_modules/react-native/React/Base/Surface/SurfaceHostingView/RCTSurfaceHostingView.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTSurfaceDelegate.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTSurfaceStage.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTSurfaceSizeMeasureMode.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTAssert.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTUtils.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/node_modules/react-native/React/Base/RCTRootContentView.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTView.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTBorderStyle.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTComponent.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Private/React-Core/React/RCTPointerEvents.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/node_modules/react-native/React/Base/RCTRootViewDelegate.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/node_modules/react-native/React/Base/Surface/RCTSurface.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/node_modules/react-native/React/Views/UIView+React.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/Yoga/yoga/YGEnums.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/Yoga/yoga/YGMacros.h

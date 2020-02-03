@@ -1,0 +1,26 @@
+dependencies: \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/build/BangleCompanionApp/Build/Products/Debug-iphonesimulator/react-native-ble-plx-swift/react_native_ble_plx_swift.modulemap \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/BangleCompanionApp/AppDelegate.m \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/BangleCompanionApp/AppDelegate.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/UMReactNativeAdapter/UMModuleRegistryAdapter.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTBridgeModule.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTDefines.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTInspectorDevServerHelper.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTPackagerConnection.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/UMCore/UMModuleRegistryProvider.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/UMCore/UMModuleRegistry.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/UMCore/UMInternalModule.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/UMCore/UMDefines.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/UMCore/UMExportedModule.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/UMCore/UMViewManager.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/UMCore/UMModuleRegistryDelegate.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/UMCore/UMSingletonModule.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTBridgeDelegate.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTJavaScriptLoader.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/UMCore/UMAppDelegateWrapper.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTBundleURLProvider.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTRootView.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTBridge.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTFrameUpdate.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/React-Core/React/RCTInvalidating.h \
+  /Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/Pods/Headers/Public/UMReactNativeAdapter/UMNativeModulesProxy.h

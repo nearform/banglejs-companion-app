@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "ea466c64638084893c0b325abfe27e15"
+build_time: [1580489399, 39927000]
+inputs:
+  "/Users/adamcotter/bangle-companion-workspace/bangle-companion-app-ios/ios/SetupFile.swift": [1580481954, 721662340]

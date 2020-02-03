@@ -1,0 +1,6 @@
+module Pods_BangleCompanionApp {
+  umbrella header "Pods-BangleCompanionApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
