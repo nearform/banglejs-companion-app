@@ -1,260 +1,93 @@
 // Applications screen layout
 import React, { Component } from 'react';
 import {
-  Container,
-  Content,
-  Button,
-  ListItem,
+  StyleSheet,
+  View,
+  ActivityIndicator,
+  FlatList,
   Text,
-  Left,
-  Body,
-} from 'native-base';
+  TouchableOpacity
+  } from "react-native";
 
-import { StyleSheet } from 'react-native';
-import Icon2 from 'react-native-vector-icons/MaterialCommunityIcons';
-import Icon3 from 'react-native-vector-icons/FontAwesome5';
 
-// Different apps with icons subjected to change after designer's feedback
+// Apps 
 export default class AppsScreen extends Component {
-  render() {
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: "Applications",
+      headerStyle: {backgroundColor: "#fff"},
+      headerTitleStyle: {textAlign: "center",flex: 1}
+     };
+    };
+    constructor(props) {
+     super(props);
+     this.state = {
+       loading: true,
+       dataSource:[]
+      };
+    }
+    componentDidMount(){
+    fetch("https://raw.githubusercontent.com/conoro/BangleApps/master/apps.json")
+    .then(response => response.json())
+    .then((responseJson)=> {
+      this.setState({
+       loading: false,
+       dataSource: responseJson
+      })
+    })
+    .catch(error=>console.log(error)) //to catch the errors if any
+    }
+    FlatListItemSeparator = () => {
     return (
-
-      <Container style={styles.container}>
-
-        <Content style={{ height: 2000 }} >
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#E0674D" }}>
-                <Icon2 name="apps-box" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>App manager</Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#FF9501" }}>
-                <Icon2 name="bluetooth" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>Bluetooth Widget</Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#0D53D6" }}>
-                <Icon2 name="clock-out" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>Center Clock</Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#0D6A1A" }}>
-                <Icon2 name="matrix" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>Binary Clock</Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#007AFF" }}>
-                <Icon2 name="flag-triangle" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>Espruino Flag Raiser</Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#DC8406" }}>
-                <Icon2 name="compass-outline" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>Compass</Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#DC1D06" }}>
-                <Icon2 name="heart-pulse" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>Heart rate monitor</Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#DC8406" }}>
-                <Icon2 name="satellite-uplink" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>GPS Info </Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#0D53D6" }}>
-                <Icon2 name="alarm" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>Default Alarm </Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#E0674D" }}>
-                <Icon2 name="battery" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>Battery Level Widget </Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#0D6A1A" }}>
-                <Icon2 name="music-note-bluetooth" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>Bluetooth Music Control</Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#E0674D" }}>
-                <Icon2 name="duck" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>Flappy Bird </Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#007AFF" }}>
-                <Icon2 name="cube-unfolded" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>Clock Tris </Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#E0674D" }}>
-                <Icon2 name="keyboard-variant" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>Bluetooth keyboard </Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#FF9501" }}>
-                <Icon2 name="satellite-variant" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>GPS Time </Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#0D6A1A" }}>
-                <Icon2 name="clock-fast" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>Morphing Clock </Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#0D53D6" }}>
-                <Icon2 name="hand" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text>Gesture Test </Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#E0674D" }}>
-                <Icon3 name="horse" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text> Horse Race </Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#FF9501" }}>
-                <Icon3 name="bell" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text> Jingle Bells </Text>
-            </Body>
-          </ListItem>
-
-          <ListItem icon onPress={() => alert('Connecting ...')}>
-            <Left>
-              <Button style={{ backgroundColor: "#DC1D06" }}>
-                <Icon3 name="walking" size={20} color='#ffffff' />
-              </Button>
-            </Left>
-            <Body>
-              <Text> Pedometer widget </Text>
-            </Body>
-          </ListItem>
-
-        </Content>
-
-      </Container>
-
+      <View style={{
+         height: .5,
+         width:"100%",
+         backgroundColor:"rgba(0,0,0,0.5)",
+    }}
+    />
     );
-  }
-}
-
-// Main container styling
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#EAF0EC',
-    marginTop: 80
-  },
-});
+    }
+    renderItem=(data)=>
+    <TouchableOpacity style={styles.list}>
+    <Text style={styles.name}>{data.item.name}</Text>
+    <Text style={styles.lightText}>{data.item.description}</Text>
+    </TouchableOpacity>
+    render(){
+     if(this.state.loading){
+      return( 
+        <View style={styles.loader}> 
+          <ActivityIndicator size="large" color="#0c9"/>
+        </View>
+    )}
+    return(
+     <View style={styles.container}>
+     <FlatList
+        data= {this.state.dataSource}
+        ItemSeparatorComponent = {this.FlatListItemSeparator}
+        renderItem= {item=> this.renderItem(item)}
+        keyExtractor= {item=>item.id.toString()}
+     />
+    </View>
+    )}
+    }
+    const styles = StyleSheet.create({
+      container: {
+        flex: 1,
+        backgroundColor: "#fff"
+       },
+      loader:{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#fff"
+       },
+      list:{
+        paddingVertical: 4,
+        margin: 5,
+        backgroundColor: "#fff"
+       },
+       name:{
+        fontSize: 20,
+        fontWeight: "bold"
+       }
+    });
