@@ -48,7 +48,7 @@ export default class AppsScreen extends Component {
     );
     }
     renderItem=(data)=>
-    <TouchableOpacity style={styles.list}>
+    <TouchableOpacity onPress={() => alert('Coming soon ..')} style={styles.list}>
     <Text style={styles.name}>{data.item.name}</Text>
     <Text style={styles.lightText}>{data.item.description}</Text>
     </TouchableOpacity>
