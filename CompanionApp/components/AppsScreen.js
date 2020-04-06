@@ -6,13 +6,15 @@ import {
   ActivityIndicator,
   FlatList,
   Text,
-  TouchableOpacity
+  TouchableOpacity,
+  Button
   } from "react-native";
 
+  import { Container, Header, Content, Icon, Picker, Form } from "native-base"
 
 // Apps 
 export default class AppsScreen extends Component {
-  static navigationOptions = ({ navigation }) => {
+ static navigationOptions = ({ navigation }) => {
     return {
       title: "Applications",
       headerStyle: {backgroundColor: "#fff"},
@@ -23,7 +25,7 @@ export default class AppsScreen extends Component {
      super(props);
      this.state = {
        loading: true,
-       dataSource:[]
+       dataSource:[],
       };
     }
     componentDidMount(){
@@ -32,11 +34,14 @@ export default class AppsScreen extends Component {
     .then((responseJson)=> {
       this.setState({
        loading: false,
-       dataSource: responseJson
+       dataSource: responseJson.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase())),
       })
+
     })
     .catch(error=>console.log(error)) //to catch the errors if any
     }
+
+
     FlatListItemSeparator = () => {
     return (
       <View style={{
@@ -46,6 +51,7 @@ export default class AppsScreen extends Component {
     }}
     />
     );
+
     }
     renderItem=(data)=>
     <TouchableOpacity onPress={() => alert('Coming soon ..')} style={styles.list}>
@@ -60,14 +66,21 @@ export default class AppsScreen extends Component {
         </View>
     )}
     return(
-     <View style={styles.container}>
+     <Container style={styles.container}>
+     
      <FlatList
         data= {this.state.dataSource}
         ItemSeparatorComponent = {this.FlatListItemSeparator}
         renderItem= {item=> this.renderItem(item)}
         keyExtractor= {item=>item.id.toString()}
      />
-    </View>
+
+     <Button
+     onPress={this.onPress}
+     title="Click here to filter"
+     color="#841584"
+     /> 
+    </Container>
     )}
     }
     const styles = StyleSheet.create({
