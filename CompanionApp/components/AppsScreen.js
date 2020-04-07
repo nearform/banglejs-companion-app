@@ -14,13 +14,7 @@ import {
 
 // Apps 
 export default class AppsScreen extends Component {
- static navigationOptions = ({ navigation }) => {
-    return {
-      title: "Applications",
-      headerStyle: {backgroundColor: "#fff"},
-      headerTitleStyle: {textAlign: "center",flex: 1}
-     };
-    };
+  
     constructor(props) {
      super(props);
      this.state = {
@@ -74,12 +68,7 @@ export default class AppsScreen extends Component {
         renderItem= {item=> this.renderItem(item)}
         keyExtractor= {item=>item.id.toString()}
      />
-
-     <Button
-     onPress={this.onPress}
-     title="Click here to filter"
-     color="#841584"
-     /> 
+          
     </Container>
     )}
     }
