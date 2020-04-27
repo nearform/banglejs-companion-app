@@ -23,7 +23,7 @@ class AppsScreen extends Component {
   }
 
   getData = async () => {
-    const url = "https://raw.githubusercontent.com/conoro/BangleApps/master/apps.json";
+    const url = "https://raw.githubusercontent.com/espruino/BangleApps/master/apps.json";
     this.setState({ loading: true });
 
     try {
@@ -42,8 +42,9 @@ class AppsScreen extends Component {
     return (
       <View style={{
         height: 2,
-        width: "100%",
-        backgroundColor: "gray",
+        marginLeft: 10,
+        marginRight: 10,
+        backgroundColor: "#0066CC",
       }}
       />
     );
@@ -72,7 +73,7 @@ class AppsScreen extends Component {
       }
 
       this.state.data = this.state.source.filter(function (item) {
-        return item.name.includes(search);
+        return item.name.toLowerCase().includes(search.toLowerCase());
       }).map(function ({ name, description }) {
         return { name, description };
       });
@@ -132,6 +133,24 @@ class AppsScreen extends Component {
     });
   }
 
+  onPressHealth = () => {
+    const newData = this.state.data.filter((item) => {
+      return item.tags == 'health';
+    })
+    this.setState({
+      data: newData
+    });
+  }
+
+  onPressOthers = () => {
+    const newData = this.state.data.filter((item) => {
+      return item.tags == '';
+    })
+    this.setState({
+      data: newData
+    });
+  }
+
 
 
   renderItem = (data) =>
@@ -139,6 +158,7 @@ class AppsScreen extends Component {
       <Text style={styles.name}>{data.item.name}</Text>
       <Text style={styles.lightText}>{data.item.description}</Text>
     </TouchableOpacity>
+    
 
   render() {
     return (
@@ -151,16 +171,19 @@ class AppsScreen extends Component {
 
         <View style={styles.container}>
 
-          <View>
+          <View style={{ margin: 5 }}>
+
             <SearchBar
               placeholder="Search Here ..."
               lightTheme
-              round editable={true}
+              editable={true}
+              autoCapitalize = 'none'
               value={this.state.search}
               onChangeText={this.updateSearch}
             />
 
           </View>
+
           <View style={styles.buttonContainer}>
 
             <TouchableOpacity
@@ -199,10 +222,24 @@ class AppsScreen extends Component {
               <Text style={styles.button}>Bluetooth</Text>
             </TouchableOpacity>
 
+            <TouchableOpacity
+            style={styles.button}
+            onPress={this.onPressHealth}  >
+            <Text style={styles.button}>Health</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+          style={styles.button}
+          onPress={this.onPressOthers}  >
+          <Text style={styles.button}>Others</Text>
+        </TouchableOpacity>
+
+      
+
           </View>
 
           <FlatList
-            // ListHeaderComponent={this.renderHeader}
+            // ListHeaderComponent={this.renderType}
             data={this.state.data}
             ItemSeparatorComponent={this.ItemSeparator}
             keyExtractor={(item, id) => String(id)}
@@ -217,9 +254,9 @@ class AppsScreen extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 10,
+    padding: 5,
     backgroundColor: "#fff",
-    marginTop: 50
+    marginTop: 50,
   },
   list: {
     paddingVertical: 4,
@@ -239,12 +276,9 @@ const styles = StyleSheet.create({
 
   },
   buttonContainer: {
-    marginLeft: 5,
-    marginRight: 5,
-    marginTop: 10,
-    marginBottom: 10,
+    padding: 5,
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexWrap: 'wrap'
   },
   button: {
     backgroundColor: '#0066CC',
@@ -254,7 +288,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     padding: 5,
     textAlign: 'center',
-    margin: 3,
+    margin: 3
   }
 });
 
